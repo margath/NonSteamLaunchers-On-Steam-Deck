@@ -9,9 +9,11 @@ set -x
 
 version=v2.84
 
+github_user=margath
+
 check_for_updates() {
     # Set the URL to the GitHub API for the repository
-    local api_url="https://api.github.com/repos/moraroy/NonSteamLaunchers-On-Steam-Deck/releases/latest"
+    local api_url="https://api.github.com/repos/$github_user/NonSteamLaunchers-On-Steam-Deck/releases/latest"
 
     # Get the latest release tag from the GitHub API
     local latest_version=$(curl -s "$api_url" | grep '"tag_name":' | sed -E 's/.*"([^"]+)".*/\1/')
