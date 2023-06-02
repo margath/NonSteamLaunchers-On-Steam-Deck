@@ -73,6 +73,8 @@ indiegala_path1="$HOME/.local/share/Steam/steamapps/compatdata/NonSteamLaunchers
 indiegala_path2="$HOME/.local/share/Steam/steamapps/compatdata/IndieGalaLauncher/pfx/drive_c/Program Files/IGClient/IGClient.exe"
 rockstar_path1="$HOME/.local/share/Steam/steamapps/compatdata/NonSteamLaunchers/pfx/drive_c/Program Files/Rockstar Games/Launcher/Launcher.exe"
 rockstar_path2="$HOME/.local/share/Steam/steamapps/compatdata/RockstarGamesLauncher/pfx/drive_c/Program Files/Rockstar Games/Launcher/Launcher.exe"
+rsi_cig_path1="$HOME/.local/share/Steam/steamapps/compatdata/NonSteamLaunchers/pfx/drive_c/Program Files/Roberts Space Industries/RSI-Setup-?.?.?.exe"
+rsi_cig_path2="$HOME/.local/share/Steam/steamapps/compatdata/RobertsSpaceIndustries/pfx/drive_c/Program Files/Roberts Space Industries/RSI-Setup-?.?.?.exe"
 
 function CheckInstallations {
 # Check if Epic Games Launcher is installed
@@ -1170,8 +1172,11 @@ rockstar_url=https://gamedownloads.rockstargames.com/public/installer/Rockstar-G
 # Set the path to save the twelfth file to
 rockstar_file=~/Downloads/NonSteamLaunchersInstallation/Rockstar-Games-Launcher.exe
 
+# Set the URL to download the RSI Setup Launcher from:
+rsi_url=https://install.robertsspaceindustries.com/star-citizen/RSI-Setup-1.6.6.exe
 
-
+# Set the path to save the RSI Setup Launcher to:
+rsi_file=~/Downloads/NonSteamLaunchersInstallation/RSI-Setup.exe
 
 echo "20"
 echo "# Creating files & folders"
